@@ -1,211 +1,117 @@
-/*  import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 *{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body{
-  background: rgb(226, 226, 226);
-}
-nav{
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  left: 0;
-  width: 90px;
-  /* width: 280px; */
-  background: #fff;
-  overflow: hidden;
-  transition: 1s;
-}
-nav:hover{
-  width: 280px;
-  transition: 1s;
-}
-.logo{
-  text-align: center;
-  display: flex;
-  margin: 10px 0 0 10px;
-  padding-bottom: 3rem;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-.logo img{
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
 }
-.logo span{
-  font-weight: bold;
-  padding-left: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
+.navbar{
+    background-color: #333;
+    border-radius: 2px;
+    margin: -9px -8px;
 }
-a{
-  position: relative;
-  width: 280px;
-  font-size: 14px;
-  color: rgb(85, 83, 83);
-  display: table;
-  padding: 10px;
+.navbar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
 }
-nav .fas{
-  position: relative;
-  width: 70px;
-  height: 40px;
-  top: 20px;
-  font-size: 20px;
-  text-align: center;
-}
-.nav-item{
-  position: relative;
-  top: 12px;
-  margin-left: 10px;
-}
-a:hover{
-  background: #eee;
-}
-a:hover i{
-  color: #34AF6D;
-  transition: 0.5s;
-}
-.logout{
-  position: absolute;
-  bottom: 0;
-}
+.navbar li {
+float:right;
 
-.container{
-  display: flex;
 }
-
-/* MAin Section */
-.main{
-  position: relative;
-  padding: 20px;
-  width: 100%;
+.navbar li a {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+margin: 6px;
 }
-.main-top{
-  display: flex;
-  width: 100%;
+.navbar li a:hover {
+background-color: red;
 }
-.main-top i{
-  position: absolute;
-  right: 0;
-  margin: 10px 30px;
-  color: rgb(110, 109, 109);
-  cursor: pointer;
+#webname ,.log h3{
+display: inline-block;
+color: white;
+margin: 19px 20px;
 }
-.main .users{
-  display: flex;
-  width: 100%;
+.home{
+background-image: url(img/blood\ \(4\).jpg);
+width: 100%;
+background-size:100% 100% ;
+height: 100vh;
+padding: 0px 0px;
+background-repeat: no-repeat;
 }
-.users .card{
-  width: 25%;
-  margin: 10px;
-  background: #fff;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+.text-box {
+    width: 59%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Neuton", serif;
+    line-height: 60px;
+    margin: 0px 0px;
 }
-.users .card img{
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-.users .card h4{
-  text-transform: uppercase;
-}
-.users .card p{
-  font-size: 12px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-.users table{
-  margin:  auto;
-}
-.users .per span{
-  padding: 5px;
-  border-radius: 10px;
-  background: rgb(223, 223, 223);
-}
-.users td{
-  font-size: 14px;
-  padding-right: 15px;
-}
-.users .card button{
-  width: 100%;
-  margin-top: 8px;
-  padding: 7px;
-  cursor: pointer;
-  border-radius: 10px;
-  background: transparent;
-  border: 1px solid #4AD489;
-}
-.users .card button:hover{
-  background: #4AD489;
-  color: #fff;
-  transition: 0.5s;
-}
-
-/*Attendance List serction  */
-.attendance{
-  margin-top: 20px;
-  text-transform: capitalize;
-}
-.attendance-list{
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-}
-.table{
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 15px;
-  min-width: 100%;
-  overflow: hidden;
-  border-radius: 5px 5px 0 0;
-}
-table thead tr{
-  color: #fff;
-  background: #34AF6D;
-  text-align: left;
-  font-weight: bold;
-}
-.table th,
-.table td{
-  padding: 12px 15px;
-}
-.table tbody tr{
-  border-bottom: 1px solid #ddd;
-}
-.table tbody tr:nth-of-type(odd){
-  background: #f3f3f3;
-}
-.table tbody tr.active{
-  font-weight: bold;
-  color: #4AD489;
-}
-.table tbody tr:last-of-type{
-  border-bottom: 2px solid #4AD489;
-}
-.table button{
-  padding: 6px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #4AD489;
-}
-.table button:hover{
-  background: #4AD489;
-  color: #fff;
-  transition: 0.5rem;
-}
+  
+  
+  .text-box h1 {
+    font-size: 49px;
+    font-family: "Neuton", serif;
+    letter-spacing: 9px;
+    display: inline-block;
+  }
+  
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 26px;
+    color: black;
+  }
+  
+  .hero-btn {
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius:85px;
+    padding: -1px 23px;
+    font-size: 38px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 36vh;
+    letter-spacing: 3px;
+    height: 10vh;
+    font-family: "Patrick Hand SC", cursive;
+  }
+  
+  .hero-btn:hover {
+    border: 1px solid #cd5c5c;
+    background: #42acf3;
+    transition: 1s;
+    font-weight: 300;
+  }
+  #login{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 42%;
+    background-color: #6a4aaa;
+  }
+  #loginimg{
+    height: 50%;
+    width: 41%;
+    margin: 76px 20px;
+  }
+  .box {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 20px 42px;
+    display: inline-block;
+    margin: 71px 194px;
+    height: 75px;
+  }
